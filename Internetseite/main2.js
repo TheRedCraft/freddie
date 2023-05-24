@@ -8,8 +8,10 @@ for (let i = 0; i < rezepte2; i++) {
 		searchedrezept = i;
 	}
 }
-element1.innerHTML += rezepte['rezepte'][searchedrezept]['Name'];
-element1.innerHTML += rezepte['rezepte'][searchedrezept]['Zubereitung'];
-element1.innerHTML += rezepte['rezepte'][searchedrezept]['Zutaten'];
+element1.innerHTML += '<h1 class="überschrift">' + rezepte['rezepte'][searchedrezept]['Name'] + '</h1>';
 element1.innerHTML +=
-	'<img src="' + rezepte['rezepte'][searchedrezept]['Cover'] + '">';
+	'<img class="cover" src="' + rezepte['rezepte'][searchedrezept]['Cover'] + '">';
+
+element1.innerHTML += '<p class="zubereitung">' + rezepte['rezepte'][searchedrezept]['Zubereitung'] + '</p>';
+element1.innerHTML += '<p class="zutaten">' + rezepte['rezepte'][searchedrezept]['Zutaten'] + '</p>';
+
