@@ -13,7 +13,7 @@ for (let i = 0; i < rezepte_laenge; i++) {
 			`<a onclick="setlocalstorage('` +
 			rezepte['rezepte'][i]['Name'] +
 			`')" href="./rezept.html"><div class="twitch-box"><div class="content">` +
-			rezepte['rezepte'][i]['Name'] +
+			`<p class="dick">` + rezepte['rezepte'][i]['Name'] + `</p>` +
 			`<img src="` +
 			rezepte['rezepte'][i]['Cover'] +
 			`">` +
